@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquete - Início</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        #header {
+            background-color: #e87518;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        #menu {
+            float: left;
+            width: 20%;
+            min-height: 450px;
+            padding: 15px;
+            background-color: #222;
+        }
+
+        #menu a {
+            display: block;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+        #menu a:hover {
+            background-color: #e87518;
+        }
+
+        #main {
+            margin-left: 20%;
+            min-height: 450px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        #main img {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        #footer {
+            clear: both;
+            background-color: #222;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            #menu {
+                float: none;
+                width: 100%;
+                min-height: auto;
+            }
+
+            #main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Mundo do Basquete</h1>
+        <p>Conheça tudo sobre esse esporte!</p>
+    </div>
+
+    <div id="menu">
+        <a href="index.html">Início</a>
+        <a href="regras.html">Regras</a>
+        <a href="fundamentos.html">Fundamentos</a>
+        <a href="historia.html">História</a>
+        <a href="posicoes.html">Posições</a>
+    </div>
+
+    <div id="main">
+        <h2>O que é o basquete?</h2>
+
+        <p>
+            O basquete é um esporte coletivo disputado entre duas equipes
+            que tentam marcar pontos acertando a bola na cesta adversária.
+        </p>
+
+        <p>
+            O esporte exige velocidade, estratégia, trabalho em equipe,
+            coordenação motora e precisão nos arremessos.
+        </p>
+        
+        <img src="/imagens/images.jpg"
+             alt="Partida de basquete">
+
+        <h3>O melhor esprte do mundo!</h3>
+
+        <p>
+           conheça as regras, os
+            fundamentos, a história e as posições dos jogadores.
+        </p>
+    </div>
+
+    <div id="footer">
+        <p>Projeto de HTML e CSS - Mundo do Basquete</p>
+    </div>
+
+</body>
+</html>
