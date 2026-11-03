@@ -6,72 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basquete - Regras</title>
 
-    <style>
-        * { box-sizing: border-box; }
-
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
-        }
-
-        #header {
-            background-color: #c65313;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        #menu {
-            float: left;
-            width: 20%;
-            min-height: 450px;
-            padding: 15px;
-            background-color: #222;
-        }
-
-        #menu a {
-            display: block;
-            color: white;
-            padding: 12px;
-            text-decoration: none;
-            border-bottom: 1px solid #444;
-        }
-
-        #menu a:hover { background-color: #c65313; }
-
-        #main {
-            margin-left: 20%;
-            min-height: 450px;
-            padding: 20px;
-            background-color: white;
-        }
-
-        #main img {
-            max-width: 100%;
-            width: 500px;
-            height: auto;
-        }
-
-        #footer {
-            clear: both;
-            background-color: #222;
-            color: white;
-            padding: 12px;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            #menu { float: none; width: 100%; min-height: auto; }
-            #main { margin-left: 0; }
-        }
-    </style>
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
-    <div id="header">
+    <div id="header" class="cabecalho-regras">
         <h1>Regras do Basquete</h1>
         <p>Aprenda como o jogo funciona</p>
     </div>
@@ -93,6 +34,7 @@
         </p>
 
         <h3>Pontuação</h3>
+
         <ul>
             <li>1 ponto: lance livre convertido.</li>
             <li>2 pontos: arremesso dentro da linha de três pontos.</li>
@@ -100,6 +42,7 @@
         </ul>
 
         <h3>Infrações comuns</h3>
+
         <ul>
             <li>Andada: deslocar-se segurando a bola sem driblar corretamente.</li>
             <li>Dois dribles: voltar a driblar após encerrar um drible e segurar a bola.</li>
@@ -107,8 +50,9 @@
             <li>Regra dos 24 segundos: a equipe deve tentar um arremesso dentro desse limite, conforme as regras aplicáveis.</li>
         </ul>
 
-        <img src="/imagens/arbitro.jpg"
-             alt="Árbitro durante uma partida de basquete">
+        <img src="imagens/arbitro.jpg"
+             alt="Árbitro durante uma partida de basquete"
+             class="imagem-conteudo">
 
         <p>
             As regras podem variar um pouco entre competições,

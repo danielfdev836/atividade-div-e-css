@@ -1,0 +1,162 @@
+
+/* =====================================
+   CONFIGURAÇÕES GERAIS
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Cor de fundo caso a imagem não carregue */
+    background-color: #f1f1f1;
+
+    /* COLOQUE A IMAGEM DE BACKGROUND AQUI */
+    /* Exemplo: background-image: url("imagens/background.jpg"); */
+
+    /* Configurações da imagem de fundo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =====================================
+   CABEÇALHO - SELETOR ID E CLASS
+===================================== */
+
+#header {
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Cores diferentes para cada página */
+
+.cabecalho-inicio {
+    background-color: #e87518;
+}
+
+.cabecalho-regras {
+    background-color: #c65313;
+}
+
+.cabecalho-fundamentos {
+    background-color: #d99a16;
+    color: #222;
+}
+
+.cabecalho-historia {
+    background-color: #8c451f;
+}
+
+.cabecalho-posicoes {
+    background-color: #b52c22;
+}
+
+
+/* Agrupamento de seletores */
+
+#header h1,
+#header p {
+    margin: 5px;
+}
+
+
+/* =====================================
+   MENU DE NAVEGAÇÃO
+===================================== */
+
+#menu {
+    float: left;
+    width: 20%;
+    min-height: 450px;
+    padding: 15px;
+    background-color: #222;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+/* Efeito quando passar o mouse */
+
+#menu a:hover {
+    background-color: #e87518;
+    color: white;
+}
+
+
+/* =====================================
+   CONTEÚDO PRINCIPAL
+===================================== */
+
+#main {
+    margin-left: 20%;
+    min-height: 450px;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Agrupamento de seletores */
+
+#main h2,
+#main h3 {
+    color: #c65313;
+}
+
+/* Seletor CLASS para imagens */
+
+.imagem-conteudo {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+#footer {
+    clear: both;
+    background-color: #222;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 600px) {
+
+    #menu {
+        float: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .imagem-conteudo {
+        width: 100%;
+    }
+
+}
